@@ -1,0 +1,305 @@
+:root {
+  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-primary: "Montserrat", sans-serif;
+  --font-secondary: "Poppins", sans-serif;
+}
+
+/* Colors */
+:root {
+  --color-default: #222222;
+  --color-primary: #6f42c1;
+  --color-secondary: #c16f42;
+}
+
+/* Smooth scroll behavior */
+:root {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  background-color: var(--color-primary);
+}
+
+.navbar-text,
+.navbar-brand,
+.nav-link {
+  color: aliceblue !important;
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.nav-link {
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+.nav-link:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 2px;
+  width: 100%;
+  background-color: orange;
+  transform: scaleX(1);
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 2px;
+  width: 100%;
+  background-color: orange;
+  transform: scaleX(0);
+  transition: all 0.5s ease;
+}
+
+.nav-link.active::after {
+  transform: scaleX(1);
+}
+
+.offcanvas-title {
+  color: aliceblue;
+}
+
+.navbar-toggler-icon,
+.btn-close {
+  color: white;
+}
+
+
+@media (max-width: 991px) {
+  .sidebar {
+    background-color: #4e2d89;
+    backdrop-filter: blur(10px);
+  }
+}
+
+#hero {
+  padding-top: 100px;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.b-example-divider {
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: solid rgba(0, 0, 0, 0.15);
+  border-width: 1px 0;
+  box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+    inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+}
+
+.b-example-vr {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 100vh;
+}
+
+.bi {
+  vertical-align: -0.125em;
+  fill: currentColor;
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+#produk {
+  padding: 50px 0;
+}
+
+#produk h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#produk img {
+  width: 100%;
+}
+
+#produk p {
+  text-align: center;
+}
+
+.card-img-top{
+    border-radius: 50px;
+    padding: 20px;
+}
+.card{
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+.card-body{
+    padding: 25px;
+    margin-top: -15px;
+}
+.btn-primary2{
+    border-radius: 50px;
+    width: 120px;
+}
+.btn-primary2:hover{
+    background-color: black;
+    border: none;
+}
+
+h1.text-center {
+  position: relative;
+}
+
+h1.text-center::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -20px;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 80px;
+  background-color: #6f42c1;
+}
+
+.cid-tz8BZvclXW {
+  font-style: var(--font-primary);
+  color: aliceblue;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background-color: var(--color-secondary);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  word-wrap: break-word;
+}
+
+.mbr-section-btn a.btn:not(.btn-form) {
+  border-radius: 15px;
+  display: block;
+  width: 200px;
+  height: 65px;
+  margin: 20px auto;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  line-height: 50px;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+.aboutus h1{
+  font-size: 3.5em;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.aboutus p {
+  font-size: 1.2em;
+  line-height: 1.6em;
+}
+
+/* Styling for the Contact Section */
+#contact {
+  background-color: #f8f9fa; /* Set the background color */
+  padding: 80px 0; /* Add some padding for spacing */
+}
+
+.contact-wrap {
+  background-color: #fff; /* Set the background color for the contact form */
+  border: 1px solid #e0e0e0; /* Add a border around the form */
+  border-radius: 5px; /* Add rounded corners */
+  padding: 30px; /* Add some padding inside the form */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.contact-wrap h3 {
+  font-size: 24px; /* Increase the font size for the form title */
+  margin-bottom: 20px; /* Add spacing below the title */
+}
+
+.contact-wrap input,
+.contact-wrap textarea {
+  width: 100%; /* Make the input fields and textarea full-width */
+  padding: 15px; /* Add padding inside the input fields and textarea */
+  border: 1px solid #e0e0e0; /* Add a border around the input fields and textarea */
+  border-radius: 5px; /* Add rounded corners to the input fields and textarea */
+  margin-bottom: 20px; /* Add spacing between input fields and textarea */
+}
+
+.contact-wrap .btn-primary {
+  background-color: #6f42c1; /* Set the background color for the submit button */
+  color: #fff; /* Set the text color for the submit button */
+  border: none; /* Remove the button border */
+  padding: 15px 30px; /* Add padding to the button */
+  border-radius: 5px; /* Add rounded corners to the button */
+  transition: background-color 0.3s; /* Add a smooth transition for the background color */
+}
+
+.bg-purple {
+  background-color: var(--color-primary); /* Set the background color */
+}
+
+.contact-wrap .btn-primary:hover {
+  background-color: #54288d; /* Change the background color on hover */
+}
+
+/* Styling for the Info Section */
+.info-wrap {
+  background-color: #6f42c1; /* Set the background color for the info section */
+  color: #fff; /* Set the text color for the info section */
+  padding: 40px; /* Add padding inside the info section */
+  border-radius: 5px; /* Add rounded corners to the info section */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.info-wrap h3 {
+  font-size: 24px; /* Increase the font size for the info title */
+  margin-bottom: 20px; /* Add spacing below the title */
+}
+
+.info-wrap p {
+  font-size: 16px; /* Set the font size for the info text */
+  margin-bottom: 20px; /* Add spacing below the text */
+}
+
+.info-wrap a {
+  color: #fff; /* Set the text color for links */
+  text-decoration: none; /* Remove underlines from links */
+}
+
+.info-wrap a:hover {
+  text-decoration: underline; /* Add underlines on hover for links */
+}
